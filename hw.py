@@ -27,11 +27,14 @@ def age_range():
     else:
           return "senior adult"
 
+def say_age(age):
+    print ("You are ", age, " years old")
 
 if __name__=="__main__":
     greet()
     greet_evelyn()
     greet_manuel()
     manuel_age = inquire_age()
+    say_age(manuel_age)
     age_group = age_range()
     print ("age_group:", age_group)
