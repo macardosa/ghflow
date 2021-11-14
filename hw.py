@@ -14,7 +14,8 @@ def inquire_age():
     return age
 
 def age_range():
-    age = inquire_age()
+    age = inquire_age() # You already got the age save as variable
+                        # manuel_age in main function
   
     if 1 <= age <= 5:
           return "toodler"
@@ -36,5 +37,6 @@ if __name__=="__main__":
     greet_manuel()
     manuel_age = inquire_age()
     say_age(manuel_age)
-    age_group = age_range()
+    age_group = age_range() # This should not ask again for the age
+                            # It is a mistake and needs to be resolved
     print ("age_group:", age_group)
